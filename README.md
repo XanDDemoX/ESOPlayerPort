@@ -1,7 +1,7 @@
 ESOPlayerPort
 =============
 
-Teleport / Jump to your friends, group members or a wayshrine in a zone (via guild members) menu addon and console command for The Elder Scrolls Online (TESO). 
+Jump to your friends, group members or a (unknown) wayshrine in a zone (via guild members) menu addon and console command for The Elder Scrolls Online (TESO). 
 
 Note: This addon will work best if you are a member of one or more guilds with players in your own faction.
 
@@ -28,9 +28,9 @@ Usage
 
 Type into chat / console window:
 
-/goto - opens a menu with travel / teleport options
+/goto - opens a menu with travel options
 
-/goto LocationName - attempts to travel / teleport to given location name via a player in your guild
+/goto LocationName - attempts to travel to given location name via a player in your guild
 
 /goto PlayerName - attempts to travel to the player with the given account name in your group/friends list/ guild
 
