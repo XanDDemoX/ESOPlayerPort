@@ -28,7 +28,7 @@ Usage
 
 Type into chat / console window:
 
-/goto - opens a menu with travel options
+/goto - opens the current travel options menu.
 
 /goto LocationName - attempts to travel to given location name via a player in your guild
 
