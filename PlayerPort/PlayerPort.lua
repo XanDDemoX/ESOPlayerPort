@@ -1,10 +1,10 @@
-----------------------------------------------------
---[[		   PlayerPort			]]--
+-------------------------------------------------
+--[[		   PlayerPort					]]--
 --[[ Teleport to your friends, group or		]]--
 --[[ locations (via players in your guild) 	]]--
---[[ 			   			]]--
---[[ Version 0.1.3 				]]--
-----------------------------------------------------
+--[[ 			   							]]--
+--[[ Version 0.1.3 							]]--
+------------------------------------------------
 
 -- emit to chat window 
 local function chatmsg(args) 
