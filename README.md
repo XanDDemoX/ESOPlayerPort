@@ -1,7 +1,7 @@
 ESOPlayerPort
 =============
 
-Jump to your friends, group members or a (unknown) wayshrine in a zone (via guild members) menu addon and console command for The Elder Scrolls Online (TESO). 
+Jump to your friends, group and guild members or a (unknown) wayshrine in a zone (via guild members) menu addon and console command for The Elder Scrolls Online (TESO). 
 
 Note: This addon will work best if you are a member of one or more guilds with players in your own faction.
 
