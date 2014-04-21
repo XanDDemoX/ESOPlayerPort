@@ -32,7 +32,7 @@ Type into chat / console window:
 
 /goto LocationName - attempts to travel to given location name via a player in your guild
 
-/goto PlayerName - attempts to travel to the player with the given account name in your group/friends list/ guild
+/goto PlayerName - attempts to travel to the player with the given account name in your group/friends list/guild roster
 
 /goto CharacterName - attempts to travel to the player with the given character name in your group.
 
