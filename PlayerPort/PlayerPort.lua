@@ -3,7 +3,7 @@
 --[[ Teleport to your friends, group or		]]--
 --[[ locations (via players in your guild) 	]]--
 --[[ 			   							]]--
---[[ Version 0.1.3 							]]--
+--[[ Version 0.1.4 							]]--
 ------------------------------------------------
 
 -- emit to chat window 
@@ -263,7 +263,7 @@ local function RefreshLocationList()
 	
 	local btn
 	-- hide all
-	_locationListControl:HideAll(4)
+	_locationListControl:HideAll(3)
 
 	-- group
 	for i,v in ipairs(grlocTable) do 
@@ -338,50 +338,12 @@ local function OpenLocationList()
 			function() RefreshLocationList() end
 		)
 		_locationListControl:AddButton("PlayerPort_LocationOptionsList_ButtonClose","Close",20,function() _locationListControl:SetHidden(true) end)
-		_locationListControl:AddButton("PlayerPort_LocationOptionsList_ButtonClosest","Closest Wayshrine",20,function() 
-			JumpToPlayer(GetDisplayName()) 	
-			_locationListControl:SetHidden(true) 
-		end)
 	else
 		_locationListControl:SetHidden(false)
 	end
 	RefreshLocationList()
 end
 
---[[ chat link click function hook ]]--
-
-local _listControl
-local function InitList()
-	_listControl = ScrollList("PlayerPort_MenuList","Player Options",200,100,ZO_AlchemyTopLevelSkillInfo)
-	_listControl:AddButton("PlayerPort_MenuList_JumptoPlayerButton","Jump To Player",20,function() end)
-	_listControl:AddButton("PlayerPort_MenuList_CloseButton","Close",20,function() _listControl:SetHidden(true) end)
-	_listControl:SetHidden(true)
-end
-
-local function InitChatSystemLinkClickedHook()
-	local orig_ZO_ChatSystem_OnLinkClicked = ZO_ChatSystem_OnLinkClicked
-	function ZO_ChatSystem_OnLinkClicked(cmd,link,button)
-		if button == 2 and string.find(cmd,"display:") ~= nil then 
-			if _listControl == nil then
-				InitList()
-			end
-			if _locationListControl ~= nil then 
-				_locationListControl:SetHidden(true)
-			end
-			_listControl:SetHidden(false)
-			local btn = _listControl:GetButton("PlayerPort_MenuList_JumptoPlayerButton")
-			if btn ~= nil then 
-				local s,c = string.find(link,"@.+]")
-				local playerName = string.sub(link,s,c-1)
-				btn:SetHandler("OnClicked",function() 
-					JumpToPlayer(playerName)  
-					_listControl:SetHidden(true)
-				end)
-			end
-		end
-		orig_ZO_ChatSystem_OnLinkClicked(cmd,link,button)
-	end
-end
 
 local function InitSlashCommands()
 
@@ -393,9 +355,6 @@ local function InitSlashCommands()
 				JumpToLocation(args,true)
 			end
 		else
-			if _listControl ~= nil and _listControl:IsHidden() == false then
-				_listControl:SetHidden(true)
-			end
 			
 			if _locationListControl == nil or _locationListControl:IsHidden() == true then 
 				OpenLocationList()
@@ -412,8 +371,6 @@ local function PlayerPort_Loaded(eventCode, addOnName)
 	if(addOnName ~= "PlayerPort") then
         return
     end
-	
-	InitChatSystemLinkClickedHook()
 	
 	InitSlashCommands()
 	

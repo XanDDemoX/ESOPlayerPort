@@ -2,7 +2,7 @@
 --[[		   ScrollList		 		 ]]--
 --[[ A scrolling button listview control ]]--
 --[[			   		 				 ]]--
---[[	Version 0.1.1	  	 	 		 ]]--
+--[[	Version 0.1.4	  	 	 		 ]]--
 ---------------------------------------------
 function ScrollList(name,title,width,height,anchorTop)
 

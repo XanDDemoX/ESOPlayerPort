@@ -1,11 +1,9 @@
 ESOPlayerPort
 =============
 
-Jump to your friends, group and guild members or a (unknown) wayshrine in a zone (via guild members) menu addon and console command for The Elder Scrolls Online (TESO). 
+An addon for The Elder Scrolls Online which lets you teleport to your friends, group, zones and dungeons with a menu or slash command. 
 
-Note: This addon will work best if you are a member of one or more guilds with players in your own faction.
-
-Players must be online to be jumped to and not all players can always be jumped to. Essentially if you can't jump to them from your friends list / group list or guild roster then you can't jump to them with this addon either.
+Note: This addon will work best if you are a member of one or more guilds with players in your own faction. You can only teleport to players that you can teleport to from your friends list, group list or guild roster.
 
 Installation
 =============
@@ -16,7 +14,7 @@ Place the "PlayerPort" folder in your addons folder:
 
 "Documents\Elder Scrolls Online\liveeu\Addons"
 
-So the end folder structure is as follows:
+For example:
 
 "Documents\Elder Scrolls Online\live\Addons\PlayerPort"
 
@@ -26,26 +24,15 @@ So the end folder structure is as follows:
 Usage
 =============
 
-Type into chat / console window:
+/goto - opens the menu.
 
-/goto - opens the current travel options menu.
+/goto LocationName - attempts to teleport to a location via a player.
 
-/goto LocationName - attempts to travel to given location name via a player in your guild
+/goto PlayerName - attempts to teleport to a player.
 
-/goto PlayerName - attempts to travel to the player with the given account name in your group/friends list/guild roster
-
-/goto CharacterName - attempts to travel to the player with the given character name in your group.
-
-Right click on a guild member or friend in chat window to open "Jump to player" menu.
+/goto CharacterName - attempts to teleport a player using their character name. (only works in a group)
 
 DISCLAIMER
 =============
-THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
 
 THIS ADDON IS NOT ENDORSED, MAINTAINED OR SUPPORTED BY ZENIMAX OR ANY OF ITS AFFLIATES.
