@@ -1,4 +1,4 @@
-ESOPlayerPort
+ESOPlayerPort v0.1.4
 =============
 
 An addon for The Elder Scrolls Online which lets you teleport to your friends, group, zones and dungeons with a menu or slash command. 
