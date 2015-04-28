@@ -7,6 +7,9 @@ Note: This addon will work best if you are a member of one or more guilds with p
 
 Installation
 =============
+1. Download Zip by clicking the "Download Zip" button on the right
+2. Open Zip and go into the folder named "EsoPlayerPort-master"
+3. Extract or copy the "PlayerPort" folder into your addons folder:
 
 Place the "PlayerPort" folder in your addons folder:
 
