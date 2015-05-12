@@ -11,7 +11,6 @@ Installation
 2. Open Zip and go into the folder named "EsoPlayerPort-master"
 3. Extract or copy the "PlayerPort" folder into your addons folder:
 
-Place the "PlayerPort" folder in your addons folder:
 
 "Documents\Elder Scrolls Online\live\Addons"
 
@@ -27,13 +26,13 @@ For example:
 Usage
 =============
 
-/goto - opens the menu.
+* /goto - opens the menu.
 
-/goto LocationName - attempts to teleport to a location via a player.
+* /goto LocationName - attempts to teleport to a location via a player.
 
-/goto PlayerName - attempts to teleport to a player.
+* /goto PlayerName - attempts to teleport to a player.
 
-/goto CharacterName - attempts to teleport a player using their character name. (only works in a group)
+* /goto CharacterName - attempts to teleport a player using their character name. (only works in a group)
 
 DISCLAIMER
 =============
